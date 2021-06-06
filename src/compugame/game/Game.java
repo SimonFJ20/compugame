@@ -1,4 +1,4 @@
-package net.pjgame.Game;
+package compugame.game;
 
 import processing.core.PApplet;
 
