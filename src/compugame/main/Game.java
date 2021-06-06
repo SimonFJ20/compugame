@@ -1,4 +1,4 @@
-package compugame.game;
+package compugame.main;
 
 import processing.core.PApplet;
 
