@@ -1,5 +1,6 @@
 package compugame.main;
 
+import compugame.objects.Player;
 import processing.core.PApplet;
 
 public class Game extends PApplet {
@@ -12,13 +13,17 @@ public class Game extends PApplet {
 
     public void setup() {
         this.objectHandler = new ObjectHandler();
+
+        objectHandler.add(new Player());
     }
 
     public void draw() {
-        background(100);
-        fill(200);
         noStroke();
-        rect(100, 100, 100, 100);
+        noStroke();
+        fill(0);
+        background(0);
+
+        this.objectHandler.draw(this);
     }
 
     public static void main(String[] args) {

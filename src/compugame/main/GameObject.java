@@ -3,13 +3,11 @@ package compugame.main;
 public abstract class GameObject {
 
     protected ObjectId id;
-    protected float x, y;
-    public boolean visible = true;
+    protected float x = 0, y = 0;
+    private boolean visible = true;
 
     public GameObject(ObjectId id) {
         this.id = id;
-        this.x = 0;
-        this.y = 0;
     }
 
     public GameObject(ObjectId id, float x, float y) {
@@ -18,7 +16,7 @@ public abstract class GameObject {
         this.y = y;
     }
 
-    public abstract void draw();
+    public abstract void draw(Game game);
 
     public float getX() {
         return x;

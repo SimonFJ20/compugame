@@ -14,9 +14,10 @@ public class ObjectHandler {
         this.objects.remove(object);
     }
 
-    public void draw() {
+    public void draw(Game game) {
         for(int i = 0; i < this.objects.size(); i++) {
             GameObject object = this.objects.get(i);
+            if(object.isVisible()) object.draw(game);
         }
     }
 
