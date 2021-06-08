@@ -4,12 +4,14 @@ import processing.core.PApplet;
 
 public class Game extends PApplet {
 
+    private ObjectHandler objectHandler;
+
     public void settings() {
         size(500, 500);
     }
 
     public void setup() {
-
+        this.objectHandler = new ObjectHandler();
     }
 
     public void draw() {
